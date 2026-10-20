@@ -49,10 +49,13 @@ Exemple:
 """
 
 
-def sum_list_numbers(
-    list_numbers):
-    # Write here your code
-    pass
+def sum_list_numbers(list_numbers):
+    suma = 0
+    for number in list_numbers:
+        suma += number
+    return suma
+
+print(sum_list_numbers([50, 10.5, 21, 37.2, 99.9, 40.75, 80]))
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y
