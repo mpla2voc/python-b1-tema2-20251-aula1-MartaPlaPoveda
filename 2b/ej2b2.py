@@ -60,8 +60,8 @@ L'any a comprovar serà '2000', de manera que:
 """
 
 def check_leap_year(year):
-    # Un año es bisiesto si es divisible entre 4, pero no entre 100.
-    # Si es divisible entre 100, también debe ser divisible entre 400.
+    # A year is a leap year if it is divisible by 4, but not by 100.
+    # If it is divisible by 100, it must also be divisible by 400.
     if (year % 4 == 0 and year % 100 != 0) or (
         year % 4 == 0 and year % 100 == 0 and year % 400 == 0
     ):
