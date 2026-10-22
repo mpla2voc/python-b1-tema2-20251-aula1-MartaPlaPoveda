@@ -48,9 +48,18 @@ Exemple:
 """
 
 
-def kg_to_lb(kg):
-    # Write here your code
-    pass
+def convert_kg_to_lb(kg):
+    try:
+        if kg <= 0:
+            raise ValueError("Must be greater than 0.")
+        else:
+            lb = kg * 2.20462
+            return round(lb, 2)
+    except TypeError:
+        raise TypeError("Must be a number.")
+
+
+print(convert_kg_to_lb(50))
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
